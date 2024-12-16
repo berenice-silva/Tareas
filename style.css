@@ -1,0 +1,81 @@
+:root{
+    --color-primario:#62455b;
+    --color-secundario: #736681;
+    --color-input: #c1d9d0;
+    --bg: #fffae3;
+    --text-size: 1.5rem;
+    --color-text: #141827;
+}
+body{
+    font-family: "Parkinsans", sans-serif;
+    background-color: var(--bg);
+    height: 10vh;
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+}
+.encabezado{
+    padding: 10px 0 5px 0;
+}
+.agregar{
+    background-color: var(--color-input);
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 70px;
+}
+.agregar input{
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bg);
+    padding: 17px;
+}
+#input::placeholder{
+    font-size: 1.1rem;
+    color: var(--color-text);
+}
+.agregar i{
+    font-size: 40px;
+    color: var(--color-primario);
+}
+.agregar i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* seccion tareas*/
+.tareas h2{
+    margin-bottom: 20px;
+}
+.tareas{
+    font-size: 25px;
+}
+.tareas li{
+    background-color: var(--color-primario);
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--bg);
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tareas i:hover{
+    color: var(--color-secundario);
+}
+.tachado{
+    text-decoration: line-through;
+    color: #63b397 ;
+}
